@@ -1,5 +1,19 @@
 {% extends 'website/base.html' %}
+{% load static %}
 {% block title %}Abdulmohsen Alateeq{% endblock %}
 {% block content %}
-        <div class="animate__animated animate__backInDown">Initialized home page</div>
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <video class="container w-100 rounded-5 mx-auto d-block" style="height: 510px; object-fit: cover;" autoplay muted loop>
+                <source src="{% static 'videos/landing.mp4' %}" type="video/mp4">
+                Your browser does not support the video tag.
+            </video> 
+            <div class="carousel-caption d-none d-md-block mt-5" style="text-align: left; bottom: 4rem;">
+              <h5 class="fs-1">Welcome </h5>
+              <p class="fs-4">I'm glad your eyes reached my website!</p>
+            </div>
+          </div>
+        </div>
+      </div> 
 {% endblock %}
