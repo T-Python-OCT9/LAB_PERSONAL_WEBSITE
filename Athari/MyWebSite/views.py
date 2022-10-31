@@ -21,7 +21,7 @@ def education(request:HttpRequest):
 
 def trainig_programs(request:HttpRequest):
 
-    train1  = "Acquired training programs" 
+    train1  = "Acquired training programs: " 
    
 
     return render(request, 'MyWebSite/train.html', {"train" : train1 }) 
@@ -29,6 +29,6 @@ def trainig_programs(request:HttpRequest):
 
 def skills(request:HttpRequest): 
 
-    
+    text2 = " "
 
-    return HttpResponse()           
+    return render(request, 'MyWebSite/skill.html', {"skill" : text2 }) 

@@ -8,34 +8,63 @@
            
             nav {
                 background-color: #71be91;
+                margin-bottom:50px;
+            
             }
-            a {
-                color: black;
-               
+            
+            div.card {
+                text-align: center;
+                padding: 0px;
+                width: 80%;
+                margin-top: 4px;
+                margin-left: 100px;
+                margin-right: 4px;
+                margin-bottom: 25px;
+                float: left;
+                background-color: white;
+                box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+            }  
+            footer.f {
+                margin-top: 100px;
+                color: #7D695F;
+                font-size: 20px;
+                font-weight: bold;
+                height: 200px;
+                background-repeat: no-repeat;
+                background-size: 100% 100%;
+             } 
+             .con {
+                margin: 10px;
+                font-size: 15px;
+                font-weight: normal;
+                display: inline;
             }
+           
+            
         </style>
     </head>
+   
 
- <body>
-    
+ <body style="background:rgb(203, 233, 210);" >
+
     <nav>
-     <div>
+     <div>  
       <ul class="nav nav-tabs">
         <li class="nav-item">
-          <a class="nav-link " aria-current="page" href="/MyWebSite/AboutMe/">About Me</a>
+          <a class="nav-link " style = "color: black;" aria-current="page" href="/MyWebSite/AboutMe/">About Me</a>
         </li>
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" aria-current="page" data-bs-toggle="dropdown" href="/MyWebSite/Education/" role="button" aria-expanded="false">Education</a>
+          <a class="nav-link dropdown-toggle" style = "color: black;" aria-current="page" data-bs-toggle="dropdown" href="/MyWebSite/Education/" role="button" aria-expanded="false">Education</a>
           <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><a class="dropdown-item" href="#">Education</a></li>
+            <li><a class="dropdown-item" href="#">Certvaction..</a></li>
           </ul>
         </li>
         <li class="nav-item">
-          <a class="nav-link" aria-current="page" href="/MyWebSite/TrainigPrograms/">Trainig Programs</a>
+          <a class="nav-link" style = "color: black;" aria-current="page" href="/MyWebSite/TrainigPrograms/">Trainig Programs</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="/MyWebSite/Skills/">Skills</a>
+            <a class="nav-link" style = "color: black;" aria-current="page" href="/MyWebSite/Skills/">Skills</a>
         </li>
       </ul>
      </div>
@@ -44,6 +73,17 @@
 
     {% block content %}
     {% endblock %}
+
+    
+
+    <footer class="f"> 
+        <address>
+            <div class = "con">
+                <a href="mailto:aghalharbi68@sm.imamu.edu.sa"><img src="emil.jpeg" width="25" height="25"></a>
+            </div>
+        </address>
+
+    </footer>
 
 
     
