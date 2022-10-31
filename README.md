@@ -31,6 +31,9 @@ A personal website is website that represents you , your work , your career , yo
 ### Free stock videos:
 - https://pixabay.com/videos/
 
+### Free Fonts:
+- https://fonts.google.com
+
 
 ### CSS Library:
 - https://getbootstrap.com/
