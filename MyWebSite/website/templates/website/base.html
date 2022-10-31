@@ -1,0 +1,18 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %} Base title {% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'styles/css/normalize.css' %}">
+    <link rel="stylesheet" href="{% static 'styles/css/bootstrap.css' %}">
+    <link rel="stylesheet" href="{% static 'styles/css/animate.css' %}">
+</head>
+<body class="container">
+    {% block content %}
+    {% endblock %}
+    <script src="{% static 'styles/js/bootstrap.js' %}"></script>
+</body>
+</html>
