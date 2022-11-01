@@ -1,0 +1,31 @@
+{% extends 'SamaaSite/base.html' %}
+{% load static %}
+{% block content %}
+
+<div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="band">
+    <h2 class="w3-wide">My Works</h2>
+    <br>
+    <h2 class="w3-wide">Here you can preview what I have done during my Front-end development journey</h2>
+    <br>
+
+</div>
+
+<div class="container">
+    <div class="row p-4 mb-2">
+      <div class="col w3-wide">
+        An application for tourists in the Kingdom of Saudi Arabia, specifically Riyadh a display of tourist places and the possibility of booking different experiences. 
+      </div>
+      <div class="col">
+        <img src="{% static 'images/RoundKSA.jpeg' %}" style="width:100%">
+      </div>
+    </div>
+    <div class="row p-4 mb-2">
+        <div class="col">
+            <img src="{% static 'images/pdp.jpg' %}" style="width:100%">
+        </div>
+        <div class="col w3-wide">
+            Designed and developed a website page (PDP Portal) using Bootstrap 4.0 and Adobe XD, during my internship in Saudi Aramco .
+        </div>
+      </div>
+</div>
+{% endblock %}
