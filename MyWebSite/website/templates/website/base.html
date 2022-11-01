@@ -11,38 +11,33 @@
     <link rel="stylesheet" href="{% static 'styles/css/animate.css' %}">
     <link rel="stylesheet" href="{% static 'styles/css/styles.css' %}">
 </head>
-<body>
+<body class="overflow-hidden">
       <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom container">
-        <a href="{% url 'website:home' %}" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
+        <a href="{% url 'website:home' %}" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none animate__animated animate__lightSpeedInLeft">
           <svg width="40" height="40" viewBox="0 0 2050 2050" data-name="Layer 3" id="Layer_3" xmlns="http://www.w3.org/2000/svg"><defs><style>.cls-1{fill:#4d4d4d;}.cls-2{fill:#fff;}</style></defs><title/><path class="cls-1" d="M1009.1,1629.4a602.6,602.6,0,1,1,235.2-47.5A601,601,0,0,1,1009.1,1629.4Z"/><path class="cls-2" d="M803.5,1283a45.1,45.1,0,0,1-31.8-76.9L1202,775.8a45,45,0,0,1,63.6,63.7L835.3,1269.8A44.8,44.8,0,0,1,803.5,1283Z"/><path class="cls-2" d="M842.8,1000a45,45,0,0,1-26.9-8.9L699,904a45.1,45.1,0,0,1,0-72.2l116.9-87.1a45,45,0,0,1,53.8,72.2l-68.5,51,68.5,51a45,45,0,0,1-26.9,81.1Z"/><path class="cls-2" d="M1175.4,1314.2a45,45,0,0,1-26.9-81.1l68.4-51-68.4-51a45,45,0,1,1,53.7-72.2l117,87.1a45.1,45.1,0,0,1,0,72.2l-117,87.1A44.9,44.9,0,0,1,1175.4,1314.2Z"/></svg>
           <span class="ms-2 fs-4 navbar_title">Abdulmohsen Alateeq</span>
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>      
-        <ul class="nav nav-pills nav-bg-dark">
+        </a>     
+        <ul class="nav nav-pills nav-bg-dark animate__animated animate__lightSpeedInRight">
           <li class="nav-item"><a href="{% url 'website:home' %}" class="ms-3 link-secondary navbar_item" aria-current="page">Home</a></li>
-          <li class="nav-item dropdown">
-            <a class="ms-3 link-secondary navbar_item dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Tools
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="#">Action</a>
-              <a class="dropdown-item" href="#">Another action</a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">Something else here</a>
-            </div>
-          </li>
-    
           <li class="nav-item"><a href="{% url 'website:about' %}" class="ms-3 link-secondary navbar_item">About</a></li>
           <li class="nav-item"><a href="{% url 'website:contact' %}" class="ms-3 link-secondary navbar_item">Contact me</a></li>
+          <li class="nav-item dropdown">
+              <a class="ms-3 link-secondary navbar_item dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Useful Tools
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="https://cloudconvert.com/font-converter" target="_blank">Font Converter</a></li>
+                <li><a class="dropdown-item" href="https://imagecompressor.com/" target="_blank">Image Compressor</a></li>
+                <li><a class="dropdown-item" href="https://bennettfeely.com/clippy/" target="_blank">CSS Clip Path Maker</a></li>
+              </ul>          
+          </li>
         </ul>
       </header>
       <div class="container">
         {% block content %}
         {% endblock %}
       </div>
-    <div class="container">
+    <div class="container animate__animated animate__fadeInUp">
         <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 mt-4 mb-2 border-top">
           <div class="col-md-4 d-flex align-items-center">
             <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">

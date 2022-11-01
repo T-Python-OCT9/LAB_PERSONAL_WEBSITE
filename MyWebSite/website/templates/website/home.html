@@ -2,7 +2,7 @@
 {% load static %}
 {% block title %}Abdulmohsen Alateeq{% endblock %}
 {% block content %}
-    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+    <div id="carouselExampleCaptions" class="carousel slide animate__animated animate__zoomIn" data-bs-ride="false">
         <div class="carousel-inner">
           <div class="carousel-item active">
             <video class="w-100 rounded-5 mx-auto d-block video_item" autoplay muted loop>
@@ -10,8 +10,11 @@
                 Your browser does not support the video tag.
             </video> 
             <div class="carousel-caption d-none d-md-block mt-5 video_caption">
-              <h5 class="fs-1">Welcome</h5>
-              <p class="fs-4">I'm glad your eyes reached my website!</p>
+              <h5 class="fs-1 mb-3 home_caption" style="text-shadow: 1px 1px black;">Hi, I'm Abdulmohsen Alateeq...</h5>
+              <p class="fs-4 ms-5 mt-5" style="text-shadow: 1px 1px black;">💻 - Interested in Web Development!</p>
+              <p class="fs-4 ms-5" style="text-shadow: 1px 1px black;">📰 - Currently learning <span style="color: greenyellow;">Python</span> at <a href="https://bootcamp.sa/" target="_blank" rel="noopener noreferrer">Tuwaiq Academy</a>.</p>
+              <p class="fs-4 ms-5" style="text-shadow: 1px 1px black;">💞️ - So exciting to collaborate on web projects.</p>
+              <p class="fs-4 ms-5" style="text-shadow: 1px 1px black;">📫 - Feel free to reach me at <a href="{% url 'website:contact' %}">CONTACT</a> or Email: <a href="mailto:mohsenalateeq@gmail.com">mohsenalateeq@gmail.com</a>.</p>
             </div>
           </div>
         </div>
