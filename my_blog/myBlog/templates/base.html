@@ -1,0 +1,37 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Personal Website</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    {% load static %}
+    <link rel='stylesheet'  href="{% static 'style.css' %}">
+    <script src='main.js'></script>
+</head>
+<body>
+    <div class="hero; fluid">
+        <nav>
+            <img src="{% static 'images/pic4.png' %}" class="logo" >
+            <ul>
+                <li><a href="studio.html">Home</a></li>
+                <li><a href="studio.html">studio</a></li>
+                <li><a href="studio.html">hire me</a></li>
+            </ul>
+        </nav>
+        <div class="detal">
+            <h1> I am <span> Munira Alsuhaim </span>
+            <p> This is my Website to show all 
+                <br>  Details and my work experience in web development
+            </p>
+        <a href="">Download CV</a></div>
+        <div class="images">
+           <!---<img src="{% static 'images/pic7.jpg' %}" class="shape" />
+           <img src="{% static 'images/pic2.jpg' %}" class="sec" />-->
+        </div>
+    </div>
+
+</body>
+</html>
