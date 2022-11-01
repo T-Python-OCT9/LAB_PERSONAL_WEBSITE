@@ -1,0 +1,45 @@
+{% extends 'app1/base.html' %}
+{% load static %}
+{% block title %}contact me {% endblock %}
+
+{% block content %} 
+
+<h2 style="font-family: Papyrus; font-weight: bold;"  >Happy to have you , Contact me : </h2>
+
+<div >
+    <div >
+    
+
+    <form  method="post" >
+        
+        <div>
+            <label for="Name"  style="font-family: Papyrus;">Your name : </label>
+            <div>
+                <input type="text" id="Name" name="Name"  required>
+            </div>
+        </div>
+<br>
+        <div >
+            <label for="Email" style="font-family: Papyrus;">Your email address : </label>
+            <div>
+                <input type="email"  required>
+            </div>
+        </div>
+        <br>
+        <div >
+            <label for="Message" style="font-family: Papyrus;" >Your message : </label><br>
+            <div >
+                <textarea id="Message" style="width:70%; height: 150px;"></textarea>
+            </div>
+        </div>
+        <br>
+        <div >
+            <button type="submit"  style="font-family: Papyrus;">Send Message</button><br>
+        </div>
+
+    </form>
+    </div>
+
+</div>
+{% endblock %}
+{% block image %}{% endblock %}
