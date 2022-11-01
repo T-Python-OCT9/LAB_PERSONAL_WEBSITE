@@ -1,0 +1,41 @@
+{% extends 'my_app/base.html' %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static '/css/styles.css'%}">
+   
+    <title>{% block title %}HOME{% endblock %}</title>
+</head>
+<body>
+    {% block content %}
+  
+
+    
+        <section class="initial">
+            <div class="container">
+              <div class="textContent">
+                <h1>Hi I'm <span>Bahiyyah</span></h1>
+                <p>
+                    I am junior web developer
+                 
+                </p>
+               
+              </div>
+              <div class="images">
+                <picture>
+                  <source>
+                  <img src="https://img.freepik.com/premium-vector/business-woman-smm-manager-programmer-sit-infographic-work-laptop-freelancer-working-web-application-development-computers-software-developers-flat-style-vector-illustration_187411-439.jpg?size=626&ext=jpg&ga=GA1.2.1208462108.1667322559" alt="">
+                </picture>
+              </div>
+            </div>
+          </section>
+      
+  
+    {% endblock %}
+    
+</body>
+</html>
