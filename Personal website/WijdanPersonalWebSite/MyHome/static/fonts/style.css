@@ -1,0 +1,18 @@
+@font-face {
+    font-family: "tajwal";
+    src: url('http://127.0.0.1:8000/static/fonts/Tajwal-Regular.ttf');
+}
+
+
+body {
+    font-family: "ArefRuqaaink";
+}
+@font-face {
+    font-family: "";
+    src: url('http://127.0.0.1:8000/static/fonts/ArefRuqaaInk-Regular.ttf');
+}
+
+
+body {
+    font-family: "tajwal-light";
+}
