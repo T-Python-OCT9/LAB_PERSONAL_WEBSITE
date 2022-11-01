@@ -1,0 +1,325 @@
+{%load static%}
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+          <!-- Bootstrap CSS -->
+          <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+         
+    <!-- font  -->
+          <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=El+Messiri&family=Josefin+Sans:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    
+        <!----CSS link----->
+        <link rel="stylesheet" href="{% static 'style/styles.css'%}">
+        <style>
+          .imgbackgraond{
+
+               background-image: url("{%  static 'image/IMG-8458.PNG' %}");
+
+              }
+        </style>
+        <title>Alaa Abdullah Alfraih</title>
+    </head>
+    <body data-bs-spy="scroll" data-bs-target=".navbar">
+      <section id="nav-bar">
+    
+        <div>
+            <nav class="navbar fixed-top navbar-expand-lg bg-light">
+                <div class="container">
+                  <a class="navbar-brand" href="#"><img class="imgsize" src="{% static 'image/logoa.PNG'%}" alt=""></a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto">
+                      <li class="nav-item">
+                        <a class="nav-link active colofont " aria-current="page" href="{%url 'AlaaAlfraih:Alaa'%}">Myselfe</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link colofont" href="{%url 'AlaaAlfraih:AlaaWeb'%}">Experience</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link colofont" href="{%url 'AlaaAlfraih:project'%}">Project</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link colofont" href="{%url 'AlaaAlfraih:con'%}">Con</a>
+                      </li>
+                   
+                    </ul>
+            
+                  </div>
+                </div>
+              </nav>
+        </div>
+    
+       
+      </section>
+    
+      <!-- section hero -->
+
+    
+    {%block photo%}
+      <section id="home" class="imgbackgraond padse bg-cover hero-section">
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="row">
+                <div class="coo-12">
+                  {%block par%}
+                  <h1 class="display-4">Alaa Alfraih</h1>
+
+                
+                  <p class="my-4">
+    
+                   I am Alaa Alfraih I graduate from princess Nora University bachelor of computer science , <br>
+                   I am passion girl who wants to work to learn and devolp herself and achive my goals <br>
+                   Fast learner who worked for many skills as Front-end devolp <br>
+                   I worked on projects and I learned some languages  
+                   
+                  </p>
+                  {%endblock%}
+                </div>
+            </div>
+        </div>
+      </section>
+
+      {%endblock%}
+    
+    
+    
+      <!-- Project -->
+    
+    {%block project%}
+      <section id="project" class="padse">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 section-intro text-center">
+            
+              <h1 class="pt-4 " >My project</h1>
+              <div class="divider pt-4"></div>
+              <p>
+                I am fast learner who worked for many skills as Front-end devolp <br>
+                I worked on projects for my silfe and I learned some languages  , <br>
+                 I devolp some web page like cook web , playe game and shoping web
+              </p>
+             
+            </div>
+          </div>
+    
+          <div class="row">
+    
+    
+           <!-- cook project -->
+    
+          
+            <div class="col-md-4">
+
+              
+              <div class="cook">
+                <div class="cook-img">
+                  <img src="{% static 'image/Project1.png' %}" alt="">
+                  <div class="icon"> 
+                    <span class="material-symbols-outlined icon-img">
+                    restaurant
+                    </span> 
+                  </div>
+                </div>
+              </div>
+                <h5 class="mt-5 pt-4 text-center">Cook Website </h5>
+                <p class="text-center">
+                  This project for test my lernd in html and css , <br> For styles I used bootstrab library from css
+                </p>
+
+              
+              </div>
+            
+          
+    
+             <!-- ------------------------------------------------------ -->
+          
+    
+    
+    
+    
+              <!-- play project -->
+          
+            <div class="col-md-4">
+              <div class="cook">  <!-- cook -->
+                <div class="cook-img"><!-- img -->
+                  <img src="{% static 'image/play.png'%}" alt="">
+                  <div class="icon">   <!-- icon -->
+                    <span class="material-symbols-outlined icon-img">
+                      sports_esports
+                      </span>
+                  </div> <!-- icon -->
+                  </div><!-- img -->
+                </div>  <!-- cook -->
+                <h5 class="mt-5 pt-4 text-center">Play Website </h5>
+                <p class="text-center">
+                  In this game I used jQuery library from JavaScript , <br>
+                  For interface I used html and css for style
+                </p>
+              </div>
+            
+          
+    
+            <!-- ------------------------------------------------------ -->
+          
+    
+    
+    
+    
+            <!-- shop project -->
+    
+    
+          
+            <div class="col-md-4">
+              <div class="cook">
+                <div class="cook-img">
+                  <img src="{% static 'image/shoop.png'%}" alt="">
+                  <div class="icon"> <span class="material-symbols-outlined icon-img">
+                    shopping_cart
+                    </span>
+                  </div>
+                </div>
+              </div>
+                <h5 class="mt-5 pt-4 text-center">Shop Website </h5>
+                <p class="text-center">
+                  In this project I used Html, css as front-end, <br> and for do function I used JavaScript
+                </p>
+              </div>
+            
+          
+    
+    
+    
+          <!-- ------------------------------------------------------ -->
+        </div>
+      </div>
+      
+      </section>
+      {%endblock%}
+    
+    
+    
+      <!-- Skills -->
+      {%block skills%}
+      <section id="skills" class="imgbackgraondpage3 padse bg-cover hero-section">
+    
+        <div class="container">
+          <div class="row">
+            <div class="col-12 section-intro text-center">
+              <h1 class="pt-4 " >My Skills</h1>
+              <div class="divider pt-4"></div>
+              <p class="h5 ">
+                I have some technical skills, <br> like:
+              </p>
+              <div class="pt-4"></div>
+            </div>
+          </div>
+
+          <div class="row">
+
+            <div class="col-md-4">
+
+              
+              <div class="cook">
+                <div class="cook-img">
+                  <img src="" alt="">
+                  <div class="icon"> 
+                 <span class="material-symbols-outlined icon-img">
+                          web
+                  </span>
+                  </div>
+                </div>
+              </div>
+                <h3 class="mt-5 pt-4 text-center sizeSkils">Front-end devolper </h3>
+                <p >
+                 
+                </p>
+
+              
+              </div>
+
+
+
+              <div class="col-md-4">
+
+              
+                <div class="cook">
+                  <div class="cook-img">
+                    <img src="" alt="">
+                    <div class="icon"> 
+                      <span class="material-symbols-outlined icon-img">
+                        settop_component
+                        </span>
+                    </div>
+                  </div>
+                </div>
+                  <h3 class="mt-5 pt-4 text-center sizeSkils">java</h3>
+                  <p class="text-center">
+                    
+                  </p>
+  
+                
+                </div>
+
+
+                <div class="col-md-4">
+
+              
+                  <div class="cook">
+                    <div class="cook-img">
+                      <img src="" alt="">
+                      <div class="icon"> 
+                          <span class="material-symbols-outlined icon-img">
+                            computer
+                            </span>
+                      </div>
+                    </div>
+                  </div>
+                    <h3 class="mt-5 pt-4 text-center ">python </h3>
+                    <p class="text-center">
+                     
+                    </p>
+    
+                  
+                  </div>
+
+
+
+
+
+          </div>
+          </div>
+
+
+
+    
+      </section>
+      {%endblock%}
+    
+    
+    
+    
+    
+    
+    
+    
+        <!-- Optional JavaScript; choose one of the two! -->
+    
+            <!-- Option 1: Bootstrap Bundle with Popper -->
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    
+            <!-- Option 2: Separate Popper and Bootstrap JS -->
+            <!--
+            <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+            -->
+    
+    </body>
+    </html>
