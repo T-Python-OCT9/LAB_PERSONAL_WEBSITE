@@ -1,0 +1,68 @@
+{% load static %}
+
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{% block title %} My Website {% endblock%}</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    
+</head>
+<style>
+  h1{
+    text-align: center;
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+  }
+  p{
+    text-align: center;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+  }
+  h6{
+    text-align: center;
+  }
+  
+</style>
+<b>
+  <body>
+    <nav class="py-2 bg-light border-bottom">
+      <div class="container d-flex flex-wrap">
+        <ul class="nav me-auto">
+          <li class="nav-item"><a href="{% url 'HomePage:Home' %}" class="nav-link px-2 text-muted" >Home</a></li>
+          <li class="nav-item"><a href="{% url 'HomePage:Education' %}" class="nav-link px-2 text-muted">Education</a></li>
+          <li class="nav-item"><a href="{% url 'HomePage:About' %}" class="nav-link px-2 text-muted">Experience</a></li>
+          <li class="nav-item"><a href="{% url 'HomePage:Contact' %}" class="nav-link px-2 text-muted">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <img src="{% static 'backg.jpg' %}" class="w-100"  , width="170"/>
+    
+
+
+    <div class="container-fluid mt-2">
+      {% block content %}
+      <br>
+      
+      <h1>Welcome to my Website</h1><br><br>
+      <h5 style="text-align: center;">
+        I'm Rawan Alrasheed  <br> <br>
+        In this site will review about me, Education and Experience
+      </h5><br><br><br><br><br><br>
+      {% endblock %}
+      </div>
+      
+      
+
+      
+      <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+        <li class="nav-item"><a href="{% url 'HomePage:Home' %}" class="nav-link px-2 text-muted">Home</a></li>
+        <li class="nav-item"><a href="{% url 'HomePage:Education' %}" class="nav-link px-2 text-muted">Education</a></li>
+        <li class="nav-item"><a href="{% url 'HomePage:About' %}" class="nav-link px-2 text-muted">Experience</a></li>
+        <li class="nav-item"><a href="{% url 'HomePage:Contact' %}" class="nav-link px-2 text-muted">Contact</a></li>      
+      </ul>
+      
+   </body>
+  <!--End the body-->
+</b>
+</html>
