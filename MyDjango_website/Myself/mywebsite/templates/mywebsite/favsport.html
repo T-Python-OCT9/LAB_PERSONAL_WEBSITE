@@ -1,0 +1,14 @@
+{% extends 'mywebsite/base.html' %}
+ {% block title %}<title>Favorite Sports</title>{% endblock %} 
+
+ {% block content %}
+            <h1 class= "display-5">This is my <span class="text-info">Favorite Sports:</span></h1>
+            <p class= "ру-1 lead" ><ul>
+                            {% for sport in sports %}
+                                <li class="bg-teal-300 m-2 p-2 style="--bs-text-opacity: 1>Sport: {{ sport }}</li>
+                            {% endfor %}
+                                    </ul>
+            </p>
+            
+ {% endblock %}
+
