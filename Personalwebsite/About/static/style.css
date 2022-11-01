@@ -1,0 +1,78 @@
+.centered {
+    color: goldenrod;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+  
+    transform: translate(-50%, -50%);
+  }
+  #myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+  }
+  section {
+    padding: 100px 200px;
+}
+.main {
+    
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    background-image: url("{% static 'images/bg.png' %}");
+    background-image:40%;
+    align-items:center;
+    background-size: cover;
+    background-position: center;
+    font-family: 'Poppins', sans-serif
+}
+.main h2 {
+    font-family: times new roman;
+    color: goldenrod;
+    font-size: 1.1em;
+    font-weight: 500;
+}
+
+.main h2 span {
+    font-family: times new roman;
+    display: inline-block;
+    margin-top: 10px;
+    color: goldenrod;
+    font-size: 3em;
+    font-weight: 600;
+}
+
+.main h3 {
+    font-family: times new roman;
+    color: goldenrod;
+    font-size: 2em;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.mainbtn {
+    color: goldenrod;
+    background-color: gold;
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: 600;
+    display: inline-block;
+    padding: 0.9375em 2.1875em;
+    letter-spacing: 1px;
+    border-radius: 15px;
+    margin-bottom: 40px;
+    transition: 0.7s ease;
+}
+
+.mainbtn:hover {
+    background-color: white;
+    transform: scale(1.1);
+}
+  
+
+  /* Add some content at the bottom of the video/page */
+  
