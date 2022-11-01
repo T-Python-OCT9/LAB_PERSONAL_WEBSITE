@@ -1,0 +1,68 @@
+{% load static %}
+{% extends 'PersonalApp/base.html' %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+
+
+    <title>{%block title%}Works of Roaa Albishri{%endblock%}</title>
+</head>
+
+<body>
+    {%block content %}
+    <div class="container">
+        <!-- RESUME -->
+        <div id="resume" class="collapse">
+            <div class="card card-body text-white py-5" style="background-color: #c89f9c;">
+                <h2>My Resume</h2>
+                <p class="lead"></p>
+            </div>
+
+            <div class="card card-body py-5">
+                <h3>Where Have I Worked?</h3>
+                <!-- <p>I'm Fresh graduate, </p> -->
+                <div class="card-deck">
+                    <div class="card">
+                        <div class="card-body">
+                            <h4 class="card-title">Saudi Digital Academy</h4>
+                            <p class="card-text">I was a web development trainee
+                            </p>
+                            <p class="p-2 mb-3 bg-dark text-white">
+                                Position: Full Stack Developer
+                            </p>
+                        </div>
+                        <div class="card-footer">
+                            <h6 class="text-muted">Dates: May 2021 - Aug 2021</h6>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-body">
+                            <!-- <img src="PersonalProject/PersonalApp/static/imgs/city.jpeg" alt="width: 20px" > -->
+                            <h4 class="card-title">King Abdulaziz City for Science and Technology</h4>
+                            <p class="card-text">
+
+                            </p>
+                            <p class="p-2 mb-3 bg-dark text-white">
+                                Position: Software Developer
+                            </p>
+                        </div>
+                        <div class="card-footer">
+                            <h6 class="text-muted">Dates: Sep 2021 - Present</h6>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
