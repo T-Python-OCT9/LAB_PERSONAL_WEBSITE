@@ -7,8 +7,9 @@
         <style>
            
             nav {
-                background-color: #71be91;
+                background-color: #7E998D;
                 margin-bottom:50px;
+               
             
             }
             
@@ -24,66 +25,85 @@
                 background-color: white;
                 box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
             }  
-            footer.f {
-                margin-top: 100px;
-                color: #7D695F;
-                font-size: 20px;
-                font-weight: bold;
-                height: 200px;
-                background-repeat: no-repeat;
-                background-size: 100% 100%;
-             } 
-             .con {
-                margin: 10px;
-                font-size: 15px;
-                font-weight: normal;
-                display: inline;
+     
+            div.carousel-indicators {
+               text-align: center;
+                padding: 0px;
+                width: 80%;
+                height: 50%;
+                margin-top: 4px;
+                margin-left: 100px;
+                margin-right: 4px;
+                margin-bottom: 25px;
+                float: left;
+                background-color: white;
+                box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%); 
+
             }
+            div.text-start {
+                text-align: center;
+                padding: 0px;
+                width: 40%;
+                margin-top: 4px;
+                margin-left: 100px;
+                margin-right: 4px;
+                margin-bottom: 25px;
+                
+                
+            } 
+            div.text-end {
+                text-align: left;
+                padding: 0px;
+                width: 30%;
+                margin-top: 5px;
+                margin-left: 40px;
+                margin-right: 100px;
+                margin-bottom: 25px;
+                   
+            } 
+             
+      
+           
            
             
         </style>
     </head>
    
 
- <body style="background:rgb(203, 233, 210);" >
+ <body style="background:rgb(223, 241, 227); " >
 
-    <nav>
+    <nav class = "pt-6">
      <div>  
       <ul class="nav nav-tabs">
         <li class="nav-item">
-          <a class="nav-link " style = "color: black;" aria-current="page" href="/MyWebSite/AboutMe/">About Me</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" style = "color: black;" aria-current="page" data-bs-toggle="dropdown" href="/MyWebSite/Education/" role="button" aria-expanded="false">Education</a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Education</a></li>
-            <li><a class="dropdown-item" href="#">Certvaction..</a></li>
-          </ul>
+          <a class="nav-link " style = "color: black; height: 50px; " aria-current="page" href="/MyWebSite/AboutMe/">About Me</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" style = "color: black;" aria-current="page" href="/MyWebSite/TrainigPrograms/">Trainig Programs</a>
+          <a class="nav-link " style = "color: black; height: 50px;" aria-current="page" href="/MyWebSite/Education/">Education</a>
+        </li>
+      
+        <li class="nav-item">
+          <a class="nav-link" style = "color: black; height: 50px;" aria-current="page" href="/MyWebSite/TrainigPrograms/">Trainig Programs</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" style = "color: black;" aria-current="page" href="/MyWebSite/Skills/">Skills</a>
+            <a class="nav-link" style = "color: black; height: 50px;" aria-current="page" href="/MyWebSite/Skills/">Skills</a>
         </li>
       </ul>
      </div>
     </nav> 
      
+    
+    
+    
 
     {% block content %}
     {% endblock %}
 
     
 
-    <footer class="f"> 
-        <address>
-            <div class = "con">
-                <a href="mailto:aghalharbi68@sm.imamu.edu.sa"><img src="emil.jpeg" width="25" height="25"></a>
-            </div>
-        </address>
+    
 
-    </footer>
+    
 
 
     

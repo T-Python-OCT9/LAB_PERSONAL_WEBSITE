@@ -16,7 +16,7 @@ def education(request:HttpRequest):
 
     text_certificates = ""
 
-    return HttpResponse(text_education,text_certificates) 
+    return render(request, 'MyWebSite/edu.html', {"edu1" : text_education,"edu2" : text_certificates}) 
 
 
 def trainig_programs(request:HttpRequest):
@@ -29,6 +29,6 @@ def trainig_programs(request:HttpRequest):
 
 def skills(request:HttpRequest): 
 
-    text2 = " "
+    text2 = "skills: "
 
     return render(request, 'MyWebSite/skill.html', {"skill" : text2 }) 
