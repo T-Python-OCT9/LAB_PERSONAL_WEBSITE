@@ -8,6 +8,7 @@
 .video_item {
   height: 510px;
   object-fit: cover;
+  opacity: 0.6;
 }
 .video_caption {
   text-align: left;
