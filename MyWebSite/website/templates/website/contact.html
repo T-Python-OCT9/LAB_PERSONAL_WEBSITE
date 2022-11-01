@@ -2,5 +2,53 @@
 {% load static %}
 {% block title %}Abdulmohsen Alateeq- Contact{% endblock %}
 {% block content %}
-    Contact
+<div class="d-flex justify-content-evenly">
+<div style="width: 30%;">
+    <div class="fs-3 mb-3 border-bottom pb-2">Send your message</div>
+    <form class="">
+    <div class="input-group input-group-sm mb-3">
+        <span class="input-group-text" id="inputGroup-sizing-sm">Name: </span>
+        <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+    </div>
+    <div class="input-group input-group-sm mb-3">
+        <span class="input-group-text" id="inputGroup-sizing-sm">Email: </span>
+        <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+    </div>
+    <div class="input-group input-group-sm">
+        <span class="input-group-text w-100" id="inputGroup-sizing-sm">Message: </span>
+        <input type="text" class="form-control w-100" style="height: 250px; margin-top: -3px; margin-left: 1px;" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+    </div>
+    <div class="input-group input-group-sm mb-3">
+        <button class="btn btn-outline-secondary w-100" type="button"  style="margin-top: -1px; margin-left: 1px;" id="inputGroupFileAddon04">Send Message</button>      
+    </div>
+    </form>
+</div>
+<div style="width: 30%;">
+    <div class="fs-3 mb-3 border-bottom pb-2">Address</div>
+    <div class="fs-5 mb-2 pb-1 text-secondary" style="border-bottom: 1px dashed silver;">Kingdom of Saudi Arabia</div>
+    <div class="fs-5 mb-2 pb-1 text-secondary" style="border-bottom: 1px dashed silver;">Riyadh, Ishbiliyah</div>
+    <div class="d-inline-flex fs-5 mb-3 pb-1 text-secondary" style="border-bottom: 1px dashed silver;">13325, 4624</div>
+    <div class="border rounded-3 w-100" style="height: 55%;" id="map"></div>
+</div>
+</div>
+<script>
+    // Initialize and add the map
+function initMap() {
+  // The location of Uluru
+  const uluru = { lat: 24.793370628248915, lng: 46.79215455046611 };
+  // The map, centered at Uluru
+  const map = new google.maps.Map(document.getElementById("map"), {
+    zoom: 15,
+    center: uluru,
+  });
+  // The marker, positioned at Uluru
+  const marker = new google.maps.Marker({
+    position: uluru,
+    map: map,
+  });
+}
+
+window.initMap = initMap;
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAPoMDkxoYYG0QoLei3zi4clSbU4dFkNNQ&callback=initMap&v=weekly" defer></script>
 {% endblock %}
