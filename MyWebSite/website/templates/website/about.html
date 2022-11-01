@@ -1,0 +1,13 @@
+{% extends 'website/base.html' %}
+{% load static %}
+{% block title %}Abdulmohsen Alateeq - About{% endblock %}
+{% block content %}
+<div class="animate__animated animate__fadeInLeft">
+    <h5 class="fs-1 mb-2 " style="text-shadow: 1px 1px black; color: blueviolet;">def <span style="color: greenyellow;">AboutMe()</span>:</h5>
+    <p class="fs-4 ms-5 mb-2" style="color: blueviolet;">name:<span style="color: goldenrod;"> str</span> = <span style="color: green;">'Abdulmohsen Alateeq'</span></p>
+    <p class="fs-4 ms-5 mb-2" style="color: blueviolet;">major:<span style="color: goldenrod;"> str</span> = <span style="color: green;">'Software Engineering'</span></p>
+    <p class="fs-4 ms-5 mb-2" style="color: blueviolet;">Skills:<span style="color: goldenrod;"> list</span> = <span style="color: green;">[<span style="color: green;"><br />'Linux',<br />'Python',<br />'GIT',<br />'SQL'</span><br />]</span></p>
+    <p class="fs-4 ms-5 mb-2" style="text-shadow: 1px 1px black; color: blueviolet;">for <span style="color: greenyellow;">contact</span> in <span style="color: greenyellow;">about</span>:</p>
+    <p class="fs-4 ms-5 mb-2" style="color: blueviolet;"><span class="ms-5" style="color: greenyellow;">redirect(<a href="{% url 'website:contact' %}">CONTACT</a>)</span></p>
+</div>
+{% endblock %}

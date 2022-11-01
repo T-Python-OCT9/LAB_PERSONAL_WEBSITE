@@ -1,0 +1,19 @@
+.navbar_title {
+  text-transform: uppercase;
+}
+.navbar_item {
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.video_item {
+  height: 510px;
+  object-fit: cover;
+  opacity: 0.6;
+}
+.video_caption {
+  text-align: left;
+  top: 0;
+}
+header {
+  line-height: 36px;
+}
