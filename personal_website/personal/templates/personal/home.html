@@ -1,0 +1,17 @@
+{% extends 'personal/base.html' %} 
+{% block title %} Nourah Alqahtani - Home {% endblock%}
+{% block content %}
+{% load static %}
+
+<!-- First Parallax Image with Logo Text -->
+<div class="bgimg-3 w3-display-container w3-opacity-min" id="home">
+    <div class="w3-display-middle" style="white-space:nowrap;">
+      <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">NOURAH <span class="w3-hide-small">ALQAHTANI</span> WEBSITE</span>
+    </div>
+    
+  </div>
+  <video src="{% static 'video/v1.mp4' %}" class="w3-display-container w3-opacity-min" autoplay muted loop></video>
+
+
+
+{% endblock %}
