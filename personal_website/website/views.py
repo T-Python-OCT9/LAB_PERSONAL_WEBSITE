@@ -9,5 +9,7 @@ def home(request: HttpRequest):
     return render(request, "website/base.html", context)
 
 def colleage(request: HttpRequest): 
-
     return render(request, "website/colleage.html")
+
+def connect(request: HttpRequest): 
+    return render(request, "website/connect.html")
