@@ -1,17 +1,85 @@
-{% extends 'personal/base.html' %} 
-{% block title %} Nourah Alqahtani - Home {% endblock%}
-{% block content %}
-{% load static %}
 
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Nourah Alqahtani - Home</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+      #myVideo {
+        position: fixed;
+        right: 0;
+        bottom: 0;
+        min-width: 100%;
+        min-height: 100%;
+      }
+      body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+      body, html {
+        height: 100%;
+        color: rgb(16, 15, 15);
+        line-height: 1.8;
+      }
+      /* Create a Parallax Effect */
+      .bgimg-1, .bgimg-2, .bgimg-3 {
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      /* First image (Logo. Full height) */
+      .bgimg-1 {
+        background-image: url('https://images.pexels.com/photos/858076/pexels-photo-858076.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+        min-height: 100%;
+      }
+      /* Second image (Portfolio) */
+      .bgimg-2 {
+        background-image: url("https://images.pexels.com/photos/4195514/pexels-photo-4195514.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+        min-height: 400px;
+      }
+      /* Third image (Contact) */
+      .bgimg-33 {
+        background-image: url("https://images.pexels.com/photos/403846/pexels-photo-403846.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+        min-height: 400px;
+      }
+      .bgimg-4 {
+        background-image: url("https://images.pexels.com/photos/122458/pexels-photo-122458.jpeg?auto=compress&cs=tinysrgb&w=1600");
+        min-height: 400px;
+      }
+      .w3-wide {letter-spacing: 10px;}
+      .w3-hover-opacity {cursor: pointer;}
+      /* Turn off parallax scrolling for tablets and phones */
+      @media only screen and (max-device-width: 1600px) {
+        .bgimg-1, .bgimg-2, .bgimg-3 , .bgimg-4 {
+          background-attachment: scroll;
+          min-height: 400px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    {% load static %}
+
+    <video autoplay muted loop id="myVideo">
+  <source src="{% static 'video/v1.mp4' %}" type="video/mp4">
+</video>
 <!-- First Parallax Image with Logo Text -->
 <div class="bgimg-3 w3-display-container w3-opacity-min" id="home">
     <div class="w3-display-middle" style="white-space:nowrap;">
       <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">NOURAH <span class="w3-hide-small">ALQAHTANI</span> WEBSITE</span>
     </div>
+    <div class="w3-center w3-display-container w3-opacity-min">
+    <div class="w3-bar">
+      <a href="{% url 'personal:about' %}"><button class="w3-button w3-black">ABOUT</button></a>
+      <a href="{% url 'personal:my_work' %}"><button class="w3-button w3-black">WORK</button></a>
+      <a href="{% url 'personal:contact' %}"><button class="w3-button w3-black">CONTACT</button></a>
+    </div>
+    </div>
+    
     
   </div>
-  <video src="{% static 'video/v1.mp4' %}" class="w3-display-container w3-opacity-min" autoplay muted loop></video>
-
-
-
-{% endblock %}
+  
+  </body>
+</html>
