@@ -1,0 +1,51 @@
+{% extends 'PersonalApp/base.html' %}
+{% load static %}
+
+{%block title%}Works of Roaa Albishri{%endblock%}
+
+{%block content %}
+<div class="container">
+    <!-- WORK -->
+    <div id="work" class="collapse show">
+        <div class="card card-body text-white py-5" style="background-color: #c97c5d;">
+            <h2>My Works</h2>
+            <p class="lead"></p>
+        </div>
+
+        <div class="card card-body py-5">
+            <h3>What Have I Built?</h3>
+            <p>I have built many web app with defferent programming language</p>
+            <div class="row no-gutters">
+                <div class="col-md-3">
+                    <h3>Java Web App</h3>
+                    <a href="JavaApp.mp4" data-toggle="lightbox">
+                        <video width="350" height="260" autoplay muted>
+                            <source src="{% static 'vidoes/JavaApp.MP4' %}" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </a>
+                </div>
+            </div>
+
+            <h3>Python Project:</h3>
+            <div class="row no-gutters">
+
+                <div class="col-md-3">
+                    <a href="sda.mp4" data-toggle="lightbox">
+                        <video width="350" height="260" autoplay muted>
+                            <source src="{% static 'vidoes/sda.MP4' %}" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </a>
+                </div>
+
+            </div>
+            <div class="col-md-6">
+                <a href="https://lnkd.in/dCZ3cg9x" class="btn btn-outline-dark">
+                    <i class="fas fa-github"></i> Git the code of python project
+                </a>
+            </div>
+
+        </div>
+    </div>
+    {%endblock%}
