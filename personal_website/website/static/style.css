@@ -1,0 +1,54 @@
+section {
+    padding: 100px 200px;
+}
+.main {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    background-image: url("images/g.png");
+    align-items:center;
+    background-size: cover;
+    background-position: center;
+    font-family: 'Poppins', sans-serif
+}
+.main h2 {
+    color: #015ccc;
+    font-size: 1.1em;
+    font-weight: 500;
+}
+
+.main h2 span {
+    display: inline-block;
+    margin-top: 10px;
+    color: #015ccc;
+    font-size: 3em;
+    font-weight: 600;
+}
+
+.main h3 {
+    color: #015ccc;
+    font-size: 2em;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.mainbtn {
+    color: #fff;
+    background-color: #3a6cf4;
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: 600;
+    display: inline-block;
+    padding: 0.9375em 2.1875em;
+    letter-spacing: 1px;
+    border-radius: 15px;
+    margin-bottom: 40px;
+    transition: 0.7s ease;
+}
+.social-icons a {
+    color: rgb(11, 11, 240);
+    font-size: 1.7em;
+    padding-right: 30px;
+}
