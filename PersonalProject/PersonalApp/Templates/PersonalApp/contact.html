@@ -1,0 +1,61 @@
+{% extends 'PersonalApp/base.html' %}
+{% load static %}
+
+{%block title%}Works of Roaa Albishri{%endblock%}
+
+
+{%block content %}
+<div class="container">
+    <!-- CONTACT -->
+    <div id="contact" class="collapse show">
+        <div class="card card-bodytext-white py-5" style="background-color: #b36a5e;">
+            <h2 class="ml-2">Contact Me!</h2>
+            <p class="lead"></p>
+        </div>
+
+        <div class="card card-body py-5">
+            <h3>Get In Touch</h3>
+            <p>If You have any Q / suggestion / work!
+            </p>
+            <form>
+                <div class="form-group">
+                    <div class="input-group input-group-lg">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text text-white" style="background-color: #b36a5e;">
+                                <i class="fas fa-user"></i>
+                            </span>
+                        </div>
+                        <input type="text" class="form-control text-white" style="background-color: #ebe1df45;"
+                            placeholder="Name">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="input-group input-group-lg">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text text-white" style="background-color: #b36a5e;">
+                                <i class="fas fa-envelope"></i>
+                            </span>
+                        </div>
+                        <input type="email" class="form-control text-white" placeholder="Email"
+                            style="background-color: #ebe1df45;">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="input-group input-group-lg">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text text-white" style="background-color: #b36a5e;">
+                                <i class="fas fa-pencil-alt"></i>
+                            </span>
+                        </div>
+                        <textarea class="form-control bg-light text-dark" placeholder="Whatever You Want !"></textarea>
+                    </div>
+                </div>
+
+                <input type="submit" value="Submit" class="btn btn-block btn-lg" style="background-color: #b36a5e;">
+            </form>
+        </div>
+    </div>
+</div>
+{%endblock%}
