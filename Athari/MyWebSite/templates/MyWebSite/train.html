@@ -1,0 +1,47 @@
+{% extends 'MyWebSite/base.html' %}
+{% load static %}
+
+{% block title %} Training {% endblock%} 
+
+
+{% block content %}
+<p class="fs-4" style ="color:black;  margin:50px; margin-left: 30px; ">
+{{ train }}
+</p>
+
+   <div class="card" class="rounded" style="width: 18rem;">
+    <img src="{% static 'images/imag1.jpg' %}" class="card-img-top" alt="...">
+    <div class="card-body">
+      <p class="card-text">- Cooperative training at the Technical College in the 
+                                 E-Training Center for two months. <br><br><br></p>
+    </div>
+  </div>  
+
+  <div class="card" class="rounded" style="width: 18rem;">
+    <img src="{% static 'images/imag2.jpg' %}" class="card-img-top" alt="...">
+    <div class="card-body">
+      <p class="card-text">- The Basics of Mobile Maintenance Program from the 
+                             General Organization for Technical and Vocational 
+                             Training, for a period of 25 training hours.  </p>
+    </div>
+  </div> 
+
+  <div class="card" class="rounded" style="width: 18rem;">
+    <img src="{% static 'images/imag3.jpg' %}" class="card-img-top" alt="...">
+    <div class="card-body">
+      <p class="card-text">- Cooperative training in the Networks Department at 
+                             the Deanship of Information Technology at Imam 
+                                            University for 8 weeks.  </p>
+    </div>
+  </div>   
+  <br><br><br><br><br><br><br><br><br><br>
+
+
+{% endblock %} 
+ 
+
+
+
+
+
+ 

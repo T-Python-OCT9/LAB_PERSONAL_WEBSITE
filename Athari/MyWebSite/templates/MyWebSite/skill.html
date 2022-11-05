@@ -1,0 +1,46 @@
+{% extends 'MyWebSite/base.html' %}
+{% load static %}
+{% block title %} Skills {% endblock%} 
+
+
+{% block content %}
+<p class="fs-4" style ="color:black;  margin:50px; margin-left: 30px;">
+{{ skill }}
+</p>
+
+  <div class="card">
+    <div class="card-header">
+        Technologie skills
+    </div>
+    <div class="card-body">
+      <p class="card-text">- HTML, PHP, CSS, JavaScript,Python, SQL, XML. </p>
+      <p class="card-text">- Using the Linux system(Ubuntu and redhat)<br> 
+                         - Dealing with Android studio and virtual studio.<br>  
+                         - Dealing with Microsoft programs.<br>  
+                         - Dealing with technical problems.<br>  
+                         - Dealing with network problems.  </p>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-header">
+        other skills
+    </div>
+    <div class="card-body">
+      <ul class="card-text">
+        <li>Teamwork Skills.</li>
+        <li>Time Management.</li>
+        <li>Communication.</li>
+        <li>Flexibilty.</li>
+       
+
+      </ul>
+     
+    </div>
+  </div> 
+
+  <br><br><br><br><br><br><br><br><br>
+
+ 
+
+{% endblock %}

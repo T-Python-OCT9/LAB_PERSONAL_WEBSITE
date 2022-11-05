@@ -1,0 +1,16 @@
+{% extends 'MyWebSite/base.html' %}
+{% load static %}
+{% block title %} My Project {% endblock%} 
+
+
+{% block content %}
+
+<p class="fs-4" style ="color:black;  margin:50px; margin-left: 30px;">
+  {{ project }}
+  </p>
+  
+  <img class="w3-image" src="{% static 'images/Poster.png' %}" alt="Me" width="1500" height="600">
+
+ 
+
+{% endblock %}
