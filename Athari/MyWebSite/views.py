@@ -12,11 +12,9 @@ def about_me(request:HttpRequest):
 
 def education(request:HttpRequest):
 
-    text_education = ""
+    
 
-    text_certificates = ""
-
-    return render(request, 'MyWebSite/edu.html', {"edu1" : text_education,"edu2" : text_certificates}) 
+    return render(request, 'MyWebSite/edu.html', ) 
 
 
 def trainig_programs(request:HttpRequest):
@@ -32,3 +30,9 @@ def skills(request:HttpRequest):
     text2 = "skills: "
 
     return render(request, 'MyWebSite/skill.html', {"skill" : text2 }) 
+
+def MyProject(request:HttpRequest): 
+
+    project = "Graduation Project:-"
+
+    return render(request, 'MyWebSite/project.html',{"project" : project})     
